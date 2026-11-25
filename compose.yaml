@@ -1,0 +1,14 @@
+# compose.yml
+name: brikoo
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    image: brikoo-php:dev
+    working_dir: /app
+    volumes:
+      - ./:/app
+    init: true
+    command: ["sleep", "infinity"]
