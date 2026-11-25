@@ -7,7 +7,11 @@ services:
       context: .
       dockerfile: docker/php/Dockerfile
     image: brikoo-php:dev
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
     working_dir: /app
+    environment:
+      Home: /tmp
+      COMPOSER_HOME: /tmp/composer
     volumes:
       - ./:/app
     init: true
