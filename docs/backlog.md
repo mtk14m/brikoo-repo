@@ -11,7 +11,7 @@ Done) est dans le ticket lui-même. Types : Story, Bug, Tech, Spike, Incident, E
 | BRK-1   | Spike | Lire la vision produit et les principes d'ingénierie    | Done     |
 | BRK-101 | Tech  | Environnement de dev reproductible                      | Done     |
 | BRK-102 | Tech  | Lancer les tests en une commande                        | Done     |
-| BRK-103 | Tech  | Backlog et modèles de tickets                           | En cours |
+| BRK-103 | Tech  | Backlog et modèles de tickets                           | Done |
 
 ## Sprint 1 — Le catalogue prend forme
 
