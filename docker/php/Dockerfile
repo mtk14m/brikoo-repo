@@ -7,7 +7,8 @@ COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr
 # System tools for Composer
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git unzip \ 
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && git config --system --add safe.directory /app
 
 # php extensions for project needs
 RUN install-php-extensions intl pcov zip
