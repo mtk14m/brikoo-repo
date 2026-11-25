@@ -36,3 +36,4 @@ test-unit: ## Run the unit test suite
 
 coverage: ## Generate a coverage report (text + HTML in var/coverage)
 	$(PHP) vendor/bin/phpunit --testsuite unit --coverage-text --coverage-html var/coverage
+
